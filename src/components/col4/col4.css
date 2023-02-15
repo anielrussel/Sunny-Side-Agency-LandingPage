@@ -1,0 +1,110 @@
+.home-col4 {
+  display: flex;
+  margin-top: -5px;
+  overflow: hidden;
+}
+.home-col4-image1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.home-col4-image2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+.home-col4-image1-text,
+.home-col4-image2-text {
+  position: absolute;
+  top: 145rem;
+  padding: 0 10rem;
+}
+.home-col4-image1-text h1 {
+  font-family: var(--fraunces);
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--dark-desaturated-cyan);
+}
+.home-col4-image2-text h1 {
+  font-family: var(--fraunces);
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+.home-col4-image1-text p {
+  font-family: var(--barlow);
+  font-size: 18px;
+  color: var(--dark-desaturated-cyan);
+  padding-top: 1.5rem;
+  line-height: 1.8rem;
+}
+.home-col4-image2-text p {
+  font-family: var(--barlow);
+  font-size: 18px;
+  color: var(--dark-blue);
+  padding-top: 1.5rem;
+  line-height: 1.8rem;
+}
+.col4-image-mobile {
+  width: 100%;
+  display: none;
+}
+.col4-image-desktop {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .home-col4 {
+    flex-direction: column;
+  }
+  .home-col4-image1 {
+    width: 100%;
+  }
+  .home-col4-image2 {
+    width: 100%;
+  }
+  .home-col4-image1-text {
+    top: 205rem;
+  }
+  .home-col4-image2-text {
+    top: 260rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-col4-image1-text {
+    top: 165rem;
+  }
+  .home-col4-image2-text {
+    top: 206rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .col4-image-mobile {
+    width: 100%;
+    display: block;
+  }
+  .col4-image-desktop {
+    display: none;
+  }
+  .home-col4-image1-text {
+    padding: 0 1rem;
+    top: 150rem;
+  }
+  .home-col4-image2-text {
+    padding: 0 1rem;
+    top: 192rem;
+  }
+}
+@media screen and (max-width: 375px) {
+    .home-col4-image1-text {
+      top: 140rem;
+    }
+    .home-col4-image2-text {
+      top: 178rem;
+    }
+  }

@@ -1,0 +1,77 @@
+.home-col5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 5rem;
+  overflow: hidden;
+}
+.home-col5 h1 {
+  font-family: var(--fraunces);
+  color: var(--dark-grayish-blue);
+  font-size: 20px;
+  letter-spacing: 4px;
+  padding-bottom: 5rem;
+}
+.home-col5-row {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.emily,
+.thomas,
+.jennie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0 2rem;
+}
+.home-col5-row img {
+  width: 5rem;
+  border-radius: 50%;
+}
+.home-col5-row p {
+  font-family: var(--barlow);
+  font-size: 18px;
+  color: var(--very-dark-grayish-blue);
+  line-height: 1.8rem;
+}
+.home-col5-row h1 {
+  font-family: var(--fraunces);
+  font-size: 18px;
+  color: var(--very-dark-desaturated-blue);
+  letter-spacing: normal;
+  padding: 0 0 10px 0;
+}
+.home-col5-row span {
+  font-family: var(--barlow);
+  font-size: 14px;
+  color: var(--grayish-blue);
+}
+@media screen and (max-width: 768px) {
+  .home-col5-row {
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .emily,
+  .thomas,
+  .jennie {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+    .home-col5 {
+        text-align: center;
+        padding: 8rem 1rem;
+    }
+    .emily,
+    .thomas,
+    .jennie {
+      padding: 0 1rem;
+    }
+  }
+  

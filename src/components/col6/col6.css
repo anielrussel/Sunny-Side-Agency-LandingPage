@@ -1,0 +1,24 @@
+.home-col6 {
+    overflow: hidden;
+}
+.home-col6-mobile {
+    display: none;
+}
+.home-col6-desktop {
+    display: flex;
+}
+.home-col6-desktop img {
+    width: 25%;
+}
+@media screen and (max-width: 425px) {
+    .home-col6-mobile {
+        display: block;
+    }
+    .home-col6-mobile img {
+        width: 50%;
+        margin-bottom: -5px;
+    }
+    .home-col6-desktop {
+        display: none;
+    } 
+}
